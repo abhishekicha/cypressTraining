@@ -11,8 +11,9 @@
 
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
+const dbConfig = require('../../cypress.config.js');
 const sqlServer = require('cypress-sql-server');
-const dbConfig = require('../../cypress.json');
+
 /**
  * @type {Cypress.PluginConfig}
  */
@@ -25,6 +26,6 @@ module.exports = (on, config) => {
   // `config` is the resolved Cypress config
   tasks = sqlServer.loadDBPlugin(dbConfig.db);
   on('task', tasks);
-  return tasks
+ // return tasks
 
 }

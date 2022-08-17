@@ -161,3 +161,28 @@ step 3
 
 INSERT INTO persons (PersonID, LastName, FirstName, Address, City)
 VALUES ('0', 'Tom B. Erichsen', 'Skagen 21', 'kolkata', 'Norway');
+---------------------------------------------------------------------------------------------------------------------
+
+new database
+
+npm i mysql
+
+-------------------------------------------------------------
+
+cypress picture upload
+
+npm i cypress-file-upload
+
+cypress/support/commands.js like this:
+
+import 'cypress-file-upload';
+
+save file in fixture folder
+
+const p = 'Picture.png'
+
+cy.get('#file-upload').attachFile(p)
+
+
+
+
