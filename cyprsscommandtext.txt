@@ -182,6 +182,13 @@ save file in fixture folder
 const p = 'Picture.png'
 
 cy.get('#file-upload').attachFile(p)
+----------------------------------------------------------------------
+drag and drop image
+
+advertisementPage.getImage().attachFile(p, 
+      {
+          subjectType: 'drag-n-drop', events: ['dragenter', 'drop']
+      })
 
 ---------------------------------------------------------------------------------
 
