@@ -183,6 +183,22 @@ const p = 'Picture.png'
 
 cy.get('#file-upload').attachFile(p)
 
+---------------------------------------------------------------------------------
 
+cypress drag and drop
 
+npm install --save-dev @4tw/cypress-drag-drop
+
+support command.js paste the below code
+
+import '@4tw/cypress-drag-drop'
+
+https://github.com/4teamwork/cypress-drag-drop
+
+advertisementPage.getFirstElementToDrop().drag(advertisementPage.getDropPlace())
+
+getDropPlace(){
+
+        return 'span > :nth-child(4)'
+    }
 
