@@ -208,4 +208,12 @@ getDropPlace(){
 
         return 'span > :nth-child(4)'
     }
+------------------------------------------------------------------------------------------------------
 
+//     complainsPage.getVerifySearchResults().should(($input) => {
+
+    //     const idText = $input.text().slice('...').trim(' ')
+
+    //     expect(idText).to.contain('TEST')
+        
+    //   })
