@@ -217,3 +217,8 @@ getDropPlace(){
     //     expect(idText).to.contain('TEST')
         
     //   })
+
+-------------------------------------------------------------------------------------
+
+    cy.wrap($e1).trigger('mousedown' ,{ eventConstructor: 'MouseEvent' }).scrollIntoView().last($e1);
+mouse scroll
