@@ -227,3 +227,5 @@ mouse scroll
 record video of specific test video
 
  node_modules/.bin/cypress run --record --key 64d9f0bc-523b-4501-9a35-56f3ef1cd0ad  run --spec  cypress\integration\TestCases\Technician.spec.js  --headed
+
+npx cypress run --spec  cypress\integration\TestCases\Technician.spec.js  --headed
